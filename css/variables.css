@@ -1,6 +1,7 @@
 :root {
     --main-color: #b6ceda;
     --secondary-color: #264250;
+    --accent-color: #e06d44;
     --light-color: rgba(182, 206, 218, 0.6);
     --dark-overlay: rgba(38, 66, 80, 0.7);
 }

@@ -18,3 +18,9 @@ body {
 	.short-row {
 		grid-column: 3/4;
 	}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+}
