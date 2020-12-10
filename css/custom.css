@@ -78,10 +78,38 @@ header {
 /* Main */
 
 /* Section - About us */
+#about-us-section {
+	margin-top: 40px;
+}
 
 /* Section - Services */
+#service-section {
+	margin-top: 40px;
+}
 
 /* Section - Pricing */
+#pricing-section {
+	margin-top: 40px;
+}
+
+.table-wrapper > table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table {
+	margin: 30px 0;
+}
+
+.fa-check-circle-o {
+	color: var(--secondary-color);
+	font-size: 30px;
+}
+
+.fa-times-circle-o {
+	color: var(--accent-color);
+	font-size: 30px;
+}
 
 /* Footer */
 
@@ -102,33 +130,33 @@ footer > .short-row {
 	line-height: 25px;
 }
 
-.contact-info {
-	display: inline-block;
-	width: 50%;
-	float: left;
-	margin-top: 30px;
-}
+	.contact-info {
+		display: inline-block;
+		width: 50%;
+		float: left;
+		margin-top: 30px;
+	}
 
-.mail-info, .phone-info {
-	font-size: 25px;
-}
+	.mail-info, .phone-info {
+		font-size: 25px;
+	}
 
-footer a {
-	text-decoration: none;
-	color: #fff;
-}
+	footer a {
+		text-decoration: none;
+		color: #fff;
+	}
 
-footer a:hover {
-	color: var(--accent-color);
-}
+	footer a:hover {
+		color: var(--accent-color);
+	}
 
-.fa {
-	margin-right: 20px;
-}
+	.fa {
+		margin-right: 20px;
+	}
 
-.contact-info > span {
-	text-transform: uppercase;
-}
+	.contact-info > span {
+		text-transform: uppercase;
+	}
 
 .copyrights-line {
 	background-color: var(--dark-overlay);
@@ -138,57 +166,3 @@ footer a:hover {
 	border-radius: 10px 10px 0 0;
 	margin-top: 40px;
 }
-/* .all-contact-info {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 2fr;
-}
-
-.footer-logo-wrapper {
-	grid-column: 1/3;
-}
-
-.footer-logo-wrapper img {
-	height: 30px;
-}
-
-.address-info {
-	grid-column: 1/2;
-}
-
-.work-hours-info {
-	grid-column: 1/2;
-	grid-row: 3/4;
-}
-
-footer a {
-	text-decoration: none;
-	color: #fff;
-	position: relative;
-}
-
-footer a::after {
-	position: absolute;
-	content: '';
-	left: 0;
-	bottom: -5px;
-	width: 100%;
-	height: 2px;
-	background-color: #fff;
-	transform: scaleX(0);
-	transform-origin: right;
-	transition: transform 250ms ease-in;
-}
-
-footer a:hover::after {
-	transform: scaleX(1);
-	transform-origin: left;
-}
-
-.fa {
-	margin-right: 20px;
-}
-
-.mail-info, .phone-info {
-	font-size: 25px;
-} */

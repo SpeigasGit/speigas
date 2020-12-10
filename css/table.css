@@ -1,0 +1,35 @@
+table {
+    border-spacing: 5px 10px;
+}
+
+thead th {
+    vertical-align: middle;
+}
+
+thead th + th {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+tbody td + td {
+    text-align: center;
+}
+
+tfoot td:first-child {
+    text-align: right;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+tfoot {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+tfoot td + td {
+    font-size: 30px;
+}
