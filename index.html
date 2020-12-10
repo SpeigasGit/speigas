@@ -2,26 +2,128 @@
 <html lang="lt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slidžių servisas Speigas</title>
-    <!-- reset -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <!-- main -->
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/variables.css">
-    <!-- 3rd party -->
-
-    <!-- components -->
-    <link rel="stylesheet" href="./css/button.css">
-    <link rel="stylesheet" href="./css/form.css">
-    <!-- custom -->
-    <link rel="stylesheet" href="./css/variables.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Slidžių servisas Speigas</title>
+	<!-- reset -->
+	<link rel="stylesheet" href="./css/reset.css">
+	<!-- main -->
+	<link rel="stylesheet" href="./css/layout.css">
+	<link rel="stylesheet" href="./css/variables.css">
+	<!-- 3rd party -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/font-awesome.min.css">
+	<!-- components -->
+	<link rel="stylesheet" href="./css/button.css">
+	<link rel="stylesheet" href="./css/table.css">
+	<!-- custom -->
+	<link rel="stylesheet" href="./css/custom.css">
 </head>
 
 <body>
-    CONTENT
-    <script src="./js/main.js"></script>
+	<header class="container">
+		<div class="navigation-menu-wrapper long-row">
+			<img src="./img/speigas-white.png" alt="logo">
+			<nav>
+				<ul class="nav-menu">
+					<li><a href="#about-us-section">Apie mus</a></li>
+					<li><a href="#service-section">Paslaugos</a></li>
+					<li><a href="#pricing-section">Kainynas</a></li>
+					<li><a href="#contacts-footer">Kontaktai</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="header-banner-text short-row">
+			<h1>Slidžių servisas Kaune <br> Atliksime slidžių servisą per 24 val</h1>
+		</div>
+	</header>
+	<main class="container">
+
+		<section id="about-us-section" class="long-row">
+			<h2>Apie mus</h2>
+			<div>
+				<h3>Kokybiška įranga</h3>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, velit!
+				</p>
+			</div>
+			<div>
+				<h3>Atrinktos medžiagos</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, fuga. Lorem ipsum dolor sit
+					amet.</p>
+			</div>
+			<div>
+				<h3>Patirtis ir kruopštumas</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quaerat rem nesciunt.</p>
+			</div>
+		</section>
+
+		<section id="service-section" class="short-row">
+			<h2>Paslaugos</h2>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga dolores in, earum deleniti suscipit
+				reprehenderit maxime recusandae vel quis nostrum tempore officiis molestias cupiditate aliquam quasi
+				reiciendis corrupti a optio!</p>
+		</section>
+
+		<section id="pricing-section" class="long-row">
+			<h2>Kainynas</h2>
+			<table>
+				<tr>
+					<th>Serviso planas -></th>
+					<th>Bronzinis</th>
+					<th>Sidabrinis</th>
+					<th>Auksinis</th>
+				</tr>
+				<tr>
+					<td>Pirma plano paslauga</td>
+					<td><i class="fa fa-check-circle-o"></i></td>
+					<td><i class="fa fa-check-circle-o"></i></td>
+					<td><i class="fa fa-check-circle-o"></i></td>
+				</tr>
+				<tr>
+					<td>Antra plano paslauga</td>
+					<td><i class="fa fa-check-circle-o"></i></td>
+					<td><i class="fa fa-check-circle-o"></i></td>
+					<td><i class="fa fa-check-circle-o"></i></td>
+				</tr>
+				<tr>
+					<td>Trečia plano paslauga</td>
+					<td><i class="fa fa-times-circle-o"></i></td>
+					<td><i class="fa fa-check-circle-o"></i></td>
+					<td><i class="fa fa-check-circle-o"></i></td>
+				</tr>
+				<tr>
+					<td>Ketvirta plano paslauga</td>
+					<td><i class="fa fa-times-circle-o"></i></td>
+					<td><i class="fa fa-times-circle-o"></i></td>
+					<td><i class="fa fa-check-circle-o"></i></td>
+				</tr>
+				<tr>
+					<td>Kaina</td>
+					<td>10 &euro;</td>
+					<td>15 &euro;</td>
+					<td>20 &euro;</td>
+				</tr>
+			</table>
+		</section>
+
+	</main>
+	<footer id="contact-footer" class="container">
+		<div class="short-row">
+			<h2>Kontaktai</h2>
+			<div>
+				<img src="./img/speigas-black-only.png" alt="logo">
+				<div>Juozapavičiaus pr. 31-1A<br>Kaunas</div>
+			</div>
+			<div>
+				<span>info@speigas.lt</span>
+				<span>8 686 89888</span>
+			</div>
+			<div>Draugaukime Facebook</div>
+		</div>
+	</footer>
+	<script src="./js/main.js"></script>
 </body>
 
 </html>

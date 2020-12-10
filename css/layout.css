@@ -1,0 +1,20 @@
+body {
+	display: grid;
+	grid-template-columns: 1f;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 200px 600px 200px 1fr;
+}
+
+	.long-row {
+		grid-column: 2/5;
+	}
+		nav > div {
+			display: inline-block;
+		}
+
+	.short-row {
+		grid-column: 3/4;
+	}
