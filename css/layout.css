@@ -1,6 +1,6 @@
 body {
 	display: grid;
-	grid-template-columns: 1f;
+	grid-template-columns: 1fr;
 }
 
 .container {
@@ -23,4 +23,26 @@ h2 {
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+	.container {
+		grid-template-columns: 1fr 100px 600px 100px 1fr;
+	}
+}
+
+@media (max-width: 900px) {
+	.container {
+		grid-template-columns: 1fr 600px 1fr;
+	}
+
+	.long-row, .short-row {
+		grid-column: 2/3;
+	}
+}
+
+@media (max-width: 620px) {
+	.container {
+		grid-template-columns: 20px 1fr 20px;
+	}
 }

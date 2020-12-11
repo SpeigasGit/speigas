@@ -1,35 +1,92 @@
 table {
-    border-spacing: 5px 10px;
+	border-spacing: 5px 10px;
 }
 
 thead th {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 thead th + th {
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 25px;
-    padding: 0 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 25px;
+	padding: 0 20px;
 }
 
 tbody td + td {
-    text-align: center;
+	text-align: center;
 }
 
 tfoot td:first-child {
-    text-align: right;
-    vertical-align: middle;
-    font-size: 20px;
+	text-align: right;
+	vertical-align: middle;
+	font-size: 20px;
 }
 
 tfoot {
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 tfoot td + td {
-    font-size: 30px;
+	font-size: 30px;
+}
+
+.fa-check-circle-o {
+	color: var(--secondary-color);
+	font-size: 30px;
+}
+
+.fa-times-circle-o {
+	color: var(--accent-color);
+	font-size: 30px;
+}
+
+@media (max-width: 900px) {
+	table {
+		border-spacing: 2px 5px;
+	}
+
+	thead th + th {
+		font-size: 20px;
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 620px) {
+	table {
+		border-spacing: 1px 1px;
+	}
+	
+	thead th + th {
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 16px;
+		padding: 0 2px;
+	}
+	
+	tfoot td:first-child {
+		font-size: 16px;
+	}
+	
+	tfoot td + td {
+		font-size: 24px;
+	}
+	
+	.fa-check-circle-o {
+		color: var(--secondary-color);
+		font-size: 20px;
+	}
+	
+	.fa-times-circle-o {
+		color: var(--accent-color);
+		font-size: 20px;
+	}
+	tbody td {
+		vertical-align: middle;
+		border-bottom: 1px solid var(--main-color);
+	}
 }
