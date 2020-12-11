@@ -7,7 +7,7 @@ header {
 		), url(../img/header-background.jpg);
 	background-size: cover;
 	background-position: center;
-	grid-template-rows: 1fr 4fr;
+	grid-template-rows: 1fr 5fr;
 	position: relative;
 }
 
@@ -76,20 +76,102 @@ header {
 		bottom: 30%;
 	}
 /* Main */
+h2 {
+	margin-top: 60px;
+}
 
 /* Section - About us */
 #about-us-section {
-	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+.about-us-block {
+	display: inline-block;
+	width: 25%;
+	margin: 20px 40px;
+}
+
+h3 {
+	width: 100%;
+	background-color: var(--secondary-color);
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	margin-bottom: 5px;
+}
+
+.about-us-block p {
+	line-height: 25px;
 }
 
 /* Section - Services */
 #service-section {
-	margin-top: 40px;
+	background: linear-gradient(
+			0deg,
+			var(--darker-overlay),
+			var(--darker-overlay)
+		), url(../img/background.jpg);
+	background-size: cover;
+	background-position: top;
+	color: #fff;
+}
+
+.service-info-wrapper p {
+	margin-top: 20px;
+}
+
+.service-list-wrapper {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.service-info-wrapper ul {
+	margin-top: 20px;
+	list-style-type: none;
+	display: inline-block;
+	text-align: left;
+}
+
+.service-info-wrapper li {
+	position: relative;
+	line-height: 30px;
+}
+
+.service-info-wrapper li::before {
+	content: '\f2dc';
+	position: absolute;
+	left: -25px;
+	top: 0;
+	font-family: 'FontAwesome';
 }
 
 /* Section - Pricing */
-#pricing-section {
-	margin-top: 40px;
+#pricing-section p {
+	margin-top: 20px;
+}
+
+#pricing-section a {
+	text-decoration: none;
+	color: var(--accent-color);
+	position: relative;
+}
+
+#pricing-section a::after {
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background-color: var(--accent-color);
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 250ms ease-in;
+}
+
+#pricing-section a:hover::after {
+	transform: scaleX(1);
+	transform-origin: left;
 }
 
 .table-wrapper > table {
@@ -98,7 +180,8 @@ header {
 }
 
 table {
-	margin: 30px 0;
+	margin-top: 30px;
+	margin-bottom: 60px;
 }
 
 .fa-check-circle-o {
@@ -111,22 +194,24 @@ table {
 	font-size: 30px;
 }
 
+
+
+
 /* Footer */
 
 footer {
 	background: linear-gradient(
 			0deg,
-			var(--dark-overlay),
-			var(--dark-overlay)
-		), url(../img/footer-background.jpg);
+			var(--darker-overlay),
+			var(--darker-overlay)
+		), url(../img/background.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: bottom;
 	text-align: center;
 }
 
 footer > .short-row {
 	color: #fff;
-	margin-top: 40px;
 	line-height: 25px;
 }
 
@@ -159,7 +244,7 @@ footer > .short-row {
 	}
 
 .copyrights-line {
-	background-color: var(--dark-overlay);
+	background-color: var(--darker-overlay);
 	color: #fff7;
 	text-align: center;
 	padding: 15px 0;
