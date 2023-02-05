@@ -1,1 +1,4 @@
-console.log('JS is working!');
+function scrollToSection(sectionIn) {
+  var elem = document.getElementById(sectionIn);
+  elem.scrollIntoView();
+}
